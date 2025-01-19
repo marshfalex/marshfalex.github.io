@@ -18,7 +18,7 @@ Welcome to my interactive Terminal Portfolio! This project emulates a terminal i
 2. Type `guide` to see how to navigate the portfolio.
 3. Use commands like `ls`, `cd`, and `credits` to explore.
 
-### 💡 Commands
+### Commands
 
 | Command                  | Description                                      |
 |--------------------------|--------------------------------------------------|
