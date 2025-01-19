@@ -7,8 +7,7 @@ Welcome to my interactive Terminal Portfolio! This project emulates a terminal i
 ## Features
 
 - **Interactive Terminal:** Navigate the portfolio using commands like in a real terminal.
-- **Dynamic Navigation:** Explore sections such as education, projects, and skills.
-- **Built-in Help System:** Get started easily with `help` and `guide` commands.
+- **Help System:** Get started easily with `help` and `guide` commands.
 - **Responsive Design:** Optimized for various devices and screen sizes.
 
 ---
