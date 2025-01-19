@@ -84,11 +84,27 @@ function print_home() {
 }
 
 const commands = {
-    animate() {
-        term.echo(animation);
-    },
     help() {
         term.echo(`List of available commands: ${help}`);
+    },
+    guide() {
+        return [
+            '',
+            '<white>Available Commands:</white>',
+            '* <green>help</green> — Displays this help message.',
+            '* <green>ls</green> — Lists directories and files in the current location.',
+            '* <green>cd <yellow>&lt;directory&gt;</yellow></green> — Changes the current directory. Use <yellow>..</yellow> to go back or <yellow>~</yellow> for home.',
+            '* <green>credits</green> — Displays acknowledgments and used libraries.',
+            '* <green>echo <yellow>&lt;text&gt;</yellow></green> — Prints the given text to the terminal.',
+            '* <green>record <yellow>(start|stop)</yellow></green> — Starts or stops saving command history.',
+            '* <green>clear</green> — Clears the terminal screen.',
+            '',
+            '<white>How to Navigate:</white>',
+            '* Use <green>ls</green> to list directories and explore sections like <blue>education</blue>, <blue>projects</blue>, and <blue>skills</blue>.',
+            '* Use <green>cd <yellow>&lt;directory&gt;</yellow></green> to switch to a specific section.',
+            '* Click on commands or directories to interact directly.',
+            ''
+        ].join('\n');
     },
     ls(dir = null) {
         if (dir) {
@@ -226,7 +242,7 @@ term.on('click', '.directory', function() {
 
 function ready() {
     term.echo(() => render('My Portfolio'), { ansi: true })
-        .echo('<white>Welcome to my Portfolio!</white>\n').resume();
+        .echo('<white>Welcome to my Portfolio! Enter "guide" to get started</white>\n').resume();
 }
 
 function render(text) {
