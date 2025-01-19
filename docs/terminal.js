@@ -22,7 +22,7 @@ const directories = {
         [
             ['Arbitrage Tool','https://github.com/marshfalex/ArbitrageTool','sports betting arbitrage tool'],
             ['Simple RayTracing','https://github.com/marshfalex/raytracing256', 'ray tracing in 256 lines'],
-            ['Portfolio','https://jcu.bi/sysend', 'this terminal portfolio!'],
+            ['Portfolio','https://github.com/marshfalex/marshfalex.github.io/tree/main', 'this terminal portfolio!'],
         ].map(([name, url, description = '']) => {
             return `* <a href="${url}">${name}</a> &mdash; <white>${description}</white>`;
         }),
@@ -63,8 +63,6 @@ let cwd = root;
 const user = 'guest';
 const server = 'marshfalex.com';
 
-// not every command needs to be binary
-// we picked those three that works more like real programs
 const files = [
     'credits',
     'record'
@@ -151,7 +149,6 @@ const commands = {
         }
     },
     credits() {
-        // you can return string or a Promise from a command
         return [
             '',
             '<white>Source and Inspiration:</white>',
@@ -180,7 +177,6 @@ const commands = {
     }
 };
 
-// clear is default command that you can turn off with an option
 const command_list = ['clear'].concat(Object.keys(commands));
 const formatted_list = command_list.map(cmd => `<white class="command">${cmd}</white>`);
 const help = formatter.format(formatted_list);
@@ -194,10 +190,8 @@ $.terminal.new_formatter([re, function(_, command, args) {
 const term = $('body').terminal(commands, {
     greetings: false,
     checkArity: false,
-    // terminal should be disabled when running in CodePen preview
     enabled: $('body').attr('onload') === undefined,
     completion(string) {
-        // in every function we can use this to reference term object
         const { name, rest } = $.terminal.parse_command(this.get_command());
         if (['cd', 'ls'].includes(name)) {
             if (rest.startsWith('~/')) {
