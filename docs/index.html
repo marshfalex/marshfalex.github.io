@@ -1,14 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marshall Alexander | Computer Engineering</title>
+  <meta name="description" content="Marshall Alexander: Computer Engineering student at Iowa State University building ML pipelines, full-stack apps, RISC-V processors and AI automation.">
+  <meta property="og:title" content="Marshall Alexander | Computer Engineering">
+  <meta property="og:description" content="Computer Engineering @ Iowa State. ML and RAG pipelines, full-stack apps, RISC-V hardware, AI automation.">
+  <meta property="og:url" content="https://www.marshfalex.com/">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='6' y='23' font-family='monospace' font-size='18' fill='%23e5e5e5'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/xml_formatting.js"></script>
-    <script src="terminal.js"></script>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Marshall Alexander, home"><span aria-hidden="true">&gt;_</span> marshfalex</a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button type="button" class="btn-ghost" id="open-terminal">Terminal mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow mono">guest@marshfalex.com:~$ whoami</p>
+      <h1 id="hero-title">Marshall Alexander<span class="accent">.</span></h1>
+      <p class="lede">Computer Engineering student at <strong>Iowa State University</strong>. I build retrieval and forecasting pipelines, full-stack apps, AI automation, and RISC-V processors, and I care about measuring whether they actually work.</p>
+      <div class="cta-row">
+        <a class="btn" href="resume.pdf">Resume (PDF)</a>
+        <a class="btn btn-outline" href="#projects">View projects</a>
+        <a class="btn btn-outline" href="https://github.com/marshfalex" rel="noopener">GitHub</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/marshfalex" rel="noopener">LinkedIn</a>
+      </div>
+      <dl class="quick-facts">
+        <div><dt>Studying</dt><dd>B.S. Computer Engineering</dd></div>
+        <div><dt>Graduating</dt><dd>December 2027</dd></div>
+        <div><dt>Based in</dt><dd>Minnesota / Ames, IA</dd></div>
+        <div><dt>Open to</dt><dd>Internships &amp; co-ops</dd></div>
+      </dl>
+    </section>
+
+    <section class="section container" id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title"><span class="num mono" aria-hidden="true">01</span> Experience</h2>
+      <ol class="timeline" role="list">
+        <li class="card job">
+          <div class="job-head">
+            <div>
+              <h3>AI Consultant &amp; Web Developer</h3>
+              <p class="org">Alexander Sales Group · St. Paul, MN</p>
+            </div>
+            <p class="mono dim when">May 2026 – Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Designed and built a 12-page HTML/CSS website from scratch for a medical device manufacturer rep agency, with llms.txt, a robots.txt allowlisting 15 AI crawlers, and per-page SEO metadata.</li>
+            <li>Built a cloud-scheduled AI agent (Claude Code, IMAP/SMTP) that drafts context-aware client email replies, replacing manual LLM copy-paste with a workflow where a human only approves.</li>
+          </ul>
+        </li>
+        <li class="card job">
+          <div class="job-head">
+            <div>
+              <h3>Operations Engineering Intern</h3>
+              <p class="org">LightningCath · Brooklyn Park, MN</p>
+            </div>
+            <p class="mono dim when">Jun 2025 – Aug 2025</p>
+          </div>
+          <ul class="bullets">
+            <li>Migrated 400+ pieces of equipment into a web-based asset management platform, replacing manual Excel tracking with real-time maintenance visibility.</li>
+            <li>Cut average migration time per item by <strong>75%</strong> (2 min → 30 s) by automating the transfer from Excel into Grand Avenue Software.</li>
+          </ul>
+        </li>
+        <li class="card job">
+          <div class="job-head">
+            <div>
+              <h3>Technical Assistant</h3>
+              <p class="org">Iowa State University · Ames, IA</p>
+            </div>
+            <p class="mono dim when">Jan 2025 – Jun 2025</p>
+          </div>
+          <ul class="bullets">
+            <li>Imaged, reimaged, and troubleshot Dell PCs using Active Directory and Windows Deployment Services.</li>
+            <li>Resolved hardware and software tickets escalated from the Solutions Center via ServiceNow.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title"><span class="num mono" aria-hidden="true">02</span> Projects</h2>
+      <ul class="project-grid featured" role="list">
+        <li class="card project">
+          <div class="project-head">
+            <h3><a href="https://github.com/marshfalex/fda-device-rag" rel="noopener">FDA Device RAG</a></h3>
+            <span class="stat"><strong>86%</strong> Hit Rate@5</span>
+          </div>
+          <p>Hybrid BM25 + dense retrieval with reciprocal rank fusion over 1,848 chunks from FDA and manufacturer sources, with citation-grounded answers. Evaluated on a leakage-safe 50-question benchmark with Wilson confidence intervals; live Streamlit demo with CI lint and test gates.</p>
+          <ul class="tags" role="list"><li>Python</li><li>Chroma</li><li>BM25</li><li>Sentence-Transformers</li><li>Groq</li><li>Streamlit</li></ul>
+        </li>
+        <li class="card project">
+          <div class="project-head">
+            <h3><a href="https://github.com/marshfalex/retail-demand-forecasting" rel="noopener">Retail Demand Forecasting</a></h3>
+            <span class="stat"><strong>−34.7%</strong> WAPE</span>
+          </div>
+          <p>End-to-end next-day forecasting pipeline: a tuned XGBoost model beats a seasonal-naive baseline on a 3-month walk-forward holdout. Leakage-safe features covered by unit tests, TimeSeriesSplit tuning, and a live Streamlit dashboard.</p>
+          <ul class="tags" role="list"><li>Python</li><li>XGBoost</li><li>scikit-learn</li><li>pandas</li><li>Streamlit</li></ul>
+        </li>
+        <li class="card project">
+          <div class="project-head">
+            <h3>RISC-V Processor <span class="course mono">CprE 3810 · Iowa State</span></h3>
+            <span class="stat"><strong>5-stage</strong> pipeline</span>
+          </div>
+          <p>Single-cycle and pipelined 32-bit RISC-V processors in VHDL. Debugged hazards with QuestaSim waveforms and implemented data forwarding; automated Quartus synthesis and timing analysis with Bash and Python on RHEL.</p>
+          <ul class="tags" role="list"><li>VHDL</li><li>RISC-V</li><li>QuestaSim</li><li>Quartus</li><li>RHEL</li></ul>
+        </li>
+        <li class="card project">
+          <div class="project-head">
+            <h3>DocLink <span class="course mono">COMS 309 · Iowa State</span></h3>
+            <span class="stat"><strong>13</strong> REST controllers</span>
+          </div>
+          <p>Full-stack Android + Spring Boot healthcare app covering billing, medical records, scheduling, and prescriptions, with role-based auth for doctors, patients, and pharmacists. WebSocket chat and notifications; GitLab CI builds, tests, and deploys on every merge.</p>
+          <ul class="tags" role="list"><li>Java</li><li>Android</li><li>Spring Boot</li><li>WebSockets</li><li>GitLab CI</li></ul>
+        </li>
+      </ul>
+
+      <h3 class="subhead">Other work</h3>
+      <ul class="mini-list" role="list">
+        <li><a href="https://github.com/marshfalex/SmartMirror" rel="noopener">SmartMirror</a><span>Raspberry Pi smart mirror showing calendar, weather, and more</span></li>
+        <li><a href="https://github.com/marshfalex/ArbitrageTool" rel="noopener">ArbitrageTool</a><span>Finds sports betting arbitrage across books via The Odds API</span></li>
+        <li><a href="https://github.com/marshfalex/raytracing256" rel="noopener">raytracing256</a><span>C++ ray tracer in 256 lines: Phong lighting, shadows, reflections, refractions, multiple lights</span></li>
+      </ul>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title"><span class="num mono" aria-hidden="true">03</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Languages &amp; Frameworks</h3>
+          <ul class="chips" role="list"><li>Java</li><li>Python</li><li>C</li><li>C++</li><li>VHDL</li><li>Bash</li><li>Android</li><li>Spring Boot</li><li>REST APIs</li><li>JUnit</li><li>pytest</li><li>CI/CD</li></ul>
+        </div>
+        <div class="card">
+          <h3>ML &amp; Data</h3>
+          <ul class="chips" role="list"><li>XGBoost</li><li>scikit-learn</li><li>pandas</li><li>Time-series forecasting</li><li>RAG</li><li>Chroma</li><li>BM25</li><li>Sentence-Transformers</li></ul>
+        </div>
+        <div class="card">
+          <h3>Developer Tools</h3>
+          <ul class="chips" role="list"><li>Git</li><li>VS Code</li><li>GitHub Actions</li><li>Streamlit</li><li>Quartus</li><li>Questa</li><li>Code Composer Studio</li><li>RHEL</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="education" aria-labelledby="edu-title">
+      <h2 id="edu-title"><span class="num mono" aria-hidden="true">04</span> Education</h2>
+      <div class="card timeline-item">
+        <div>
+          <h3>Iowa State University</h3>
+          <p>Bachelor of Science in Computer Engineering</p>
+        </div>
+        <p class="mono dim">Expected Dec 2027</p>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title"><span class="num mono" aria-hidden="true">05</span> Get in touch</h2>
+      <p class="lede">I'm looking for internship and co-op opportunities in software, ML, and computer engineering. If you're hiring or want to talk shop, reach out.</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:marshfalex@gmail.com">marshfalex@gmail.com</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/marshfalex" rel="noopener">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/marshfalex" rel="noopener">GitHub</a>
+        <a class="btn btn-outline" href="resume.pdf">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="mono dim">© <span id="year">2026</span> Marshall Alexander · built by hand, no frameworks</p>
+  </footer>
+
+  <dialog id="terminal" aria-labelledby="term-title">
+    <div class="term-bar">
+      <h2 id="term-title" class="mono">guest@marshfalex.com</h2>
+      <button type="button" class="btn-ghost" id="close-terminal" aria-label="Close terminal">✕</button>
+    </div>
+    <div class="term-body" id="term-output" role="log" aria-live="polite"></div>
+    <form class="term-input" id="term-form">
+      <label for="term-cmd" class="mono"><span class="prompt">~$</span><span class="sr-only">Command</span></label>
+      <input id="term-cmd" class="mono" autocomplete="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </dialog>
+
+  <script src="main.js"></script>
 </body>
 </html>
