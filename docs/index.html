@@ -9,7 +9,7 @@
   <meta property="og:description" content="Computer Engineering @ Iowa State. ML and RAG pipelines, full-stack apps, RISC-V hardware, AI automation.">
   <meta property="og:url" content="https://www.marshfalex.com/">
   <meta name="theme-color" content="#0a0a0a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='6' y='23' font-family='monospace' font-size='18' fill='%23e5e5e5'>&gt;_</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='6' y='23' font-family='sans-serif' font-weight='700' font-size='15' fill='%23e5e5e5'>MA</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,25 +20,23 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
-      <a href="#top" class="brand" aria-label="Marshall Alexander, home"><span aria-hidden="true">&gt;_</span> marshfalex</a>
+      <a href="#top" class="brand">Marshall Alexander</a>
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button type="button" class="btn-ghost" id="open-terminal">Terminal mode</button></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero container" id="top" aria-labelledby="hero-title">
-      <p class="eyebrow mono">guest@marshfalex.com:~$ whoami</p>
-      <h1 id="hero-title">Marshall Alexander<span class="accent">.</span></h1>
-      <p class="lede">Computer Engineering student at <strong>Iowa State University</strong>. I build retrieval and forecasting pipelines, full-stack apps, AI automation, and RISC-V processors, and I care about measuring whether they actually work.</p>
+      <p class="eyebrow">Computer Engineering · Iowa State University</p>
+      <h1 id="hero-title">Marshall Alexander</h1>
+      <p class="lede">Computer Engineering student at <strong>Iowa State University</strong>. I build retrieval and forecasting pipelines, full-stack apps, AI automation, and RISC-V processors.</p>
       <div class="cta-row">
-        <a class="btn" href="resume.pdf">Resume (PDF)</a>
-        <a class="btn btn-outline" href="#projects">View projects</a>
+        <a class="btn" href="#projects">View projects</a>
         <a class="btn btn-outline" href="https://github.com/marshfalex" rel="noopener">GitHub</a>
         <a class="btn btn-outline" href="https://www.linkedin.com/in/marshfalex" rel="noopener">LinkedIn</a>
       </div>
@@ -51,7 +49,7 @@
     </section>
 
     <section class="section container" id="experience" aria-labelledby="exp-title">
-      <h2 id="exp-title"><span class="num mono" aria-hidden="true">01</span> Experience</h2>
+      <h2 id="exp-title">Experience</h2>
       <ol class="timeline" role="list">
         <li class="card job">
           <div class="job-head">
@@ -96,7 +94,7 @@
     </section>
 
     <section class="section container" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title"><span class="num mono" aria-hidden="true">02</span> Projects</h2>
+      <h2 id="projects-title">Projects</h2>
       <ul class="project-grid featured" role="list">
         <li class="card project">
           <div class="project-head">
@@ -141,7 +139,7 @@
     </section>
 
     <section class="section container" id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title"><span class="num mono" aria-hidden="true">03</span> Skills</h2>
+      <h2 id="skills-title">Skills</h2>
       <div class="skills-grid">
         <div class="card">
           <h3>Languages &amp; Frameworks</h3>
@@ -159,7 +157,7 @@
     </section>
 
     <section class="section container" id="education" aria-labelledby="edu-title">
-      <h2 id="edu-title"><span class="num mono" aria-hidden="true">04</span> Education</h2>
+      <h2 id="edu-title">Education</h2>
       <div class="card timeline-item">
         <div>
           <h3>Iowa State University</h3>
@@ -170,32 +168,20 @@
     </section>
 
     <section class="section container contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title"><span class="num mono" aria-hidden="true">05</span> Get in touch</h2>
-      <p class="lede">I'm looking for internship and co-op opportunities in software, ML, and computer engineering. If you're hiring or want to talk shop, reach out.</p>
+      <h2 id="contact-title">Get in touch</h2>
+      <p class="lede">I'm looking for internship and co-op opportunities in software, ML, and computer engineering. The best way to reach me is by email.</p>
       <div class="cta-row">
         <a class="btn" href="mailto:marshfalex@gmail.com">marshfalex@gmail.com</a>
         <a class="btn btn-outline" href="https://www.linkedin.com/in/marshfalex" rel="noopener">LinkedIn</a>
         <a class="btn btn-outline" href="https://github.com/marshfalex" rel="noopener">GitHub</a>
-        <a class="btn btn-outline" href="resume.pdf">Resume</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer container">
-    <p class="mono dim">© <span id="year">2026</span> Marshall Alexander · built by hand, no frameworks</p>
+    <p class="mono dim">© <span id="year">2026</span> Marshall Alexander</p>
   </footer>
 
-  <dialog id="terminal" aria-labelledby="term-title">
-    <div class="term-bar">
-      <h2 id="term-title" class="mono">guest@marshfalex.com</h2>
-      <button type="button" class="btn-ghost" id="close-terminal" aria-label="Close terminal">✕</button>
-    </div>
-    <div class="term-body" id="term-output" role="log" aria-live="polite"></div>
-    <form class="term-input" id="term-form">
-      <label for="term-cmd" class="mono"><span class="prompt">~$</span><span class="sr-only">Command</span></label>
-      <input id="term-cmd" class="mono" autocomplete="off" autocapitalize="off" spellcheck="false">
-    </form>
-  </dialog>
 
   <script src="main.js"></script>
 </body>
